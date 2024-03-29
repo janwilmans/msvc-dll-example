@@ -1,3 +1,5 @@
+#include "shared.h"
+
 #include <string>
 
 std::string* AllocateName()
@@ -15,4 +17,15 @@ std::string GetName()
 {
 	std::string name = "123456789012345678901234567890";
 	return name;
+}
+
+Remote<std::string> GetRemoteName()
+{
+	std::string name = "123456789012345678901234567890";
+	return name;
+}
+
+void RemoteRelease(std::string* object)
+{
+	delete object;
 }
