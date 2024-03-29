@@ -2,8 +2,7 @@
 
 #include <string>
 
-std::string GetName()
-{
-	std::string name = "123456789012345678901234567890";
-	return name;
-}
+std::string GetName();
+
+std::string* AllocateName();
+void FreeName(std::string* value);
